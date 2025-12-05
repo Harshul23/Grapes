@@ -44,11 +44,13 @@ Grapes is a battery observer app designed for macOS that runs quietly in the men
    swiftc -o Grapes battery_observer/main.swift battery_observer/AppDelegate.swift -framework Cocoa -framework IOKit -framework QuartzCore -framework ServiceManagement
    ./Grapes
    ```
+   
+   **Note**: This command requires macOS with Xcode Command Line Tools installed. The IOKit framework includes IOKit.ps which is used for battery monitoring.
 
 3. **Option B - Create and Build with Xcode**:
    - Open Xcode and create a new macOS App project
    - Replace the default files with `main.swift` and `AppDelegate.swift` from the `battery_observer` directory
-   - Copy the `Assets.xcassets` folder into your Xcode project
+   - Copy the `battery_observer/Assets.xcassets` folder into your Xcode project
    - Build and run (⌘ + R)
 
 4. The app will appear in your menu bar with a battery icon once running
