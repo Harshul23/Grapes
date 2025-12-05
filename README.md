@@ -36,12 +36,12 @@ Grapes is a battery observer app designed for macOS that runs quietly in the men
 1. Clone the repository:
    ```bash
    git clone https://github.com/Harshul23/Grapes.git
-   cd Grapes/battery_observer
+   cd Grapes
    ```
 
 2. **Option A - Build with Swift Compiler (Command Line)**:
    ```bash
-   swiftc -o Grapes main.swift AppDelegate.swift -framework Cocoa -framework IOKit -framework QuartzCore -framework ServiceManagement
+   swiftc -o Grapes battery_observer/main.swift battery_observer/AppDelegate.swift -framework Cocoa -framework IOKit -framework QuartzCore -framework ServiceManagement
    ./Grapes
    ```
 
