@@ -5,6 +5,8 @@ xcuserdata/
 xcuserdata/harshul.xcuserdata/
 *.xcuserstate
 
+Grobs.xcodeproj
+
 # Swift Package Manager & workspace junk
 .project.xcworkspace/xcuserdata/
 .project.xcworkspace/xcshareddata/swiftpm/
