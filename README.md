@@ -1,4 +1,4 @@
-# Grapes 🍇
+# Grapes 
 
 A lightweight macOS menu bar application that monitors your battery level and provides visual alerts when battery charge reaches customizable thresholds.
 
