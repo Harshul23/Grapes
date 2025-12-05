@@ -26,9 +26,8 @@ Grapes is a battery observer app designed for macOS that runs quietly in the men
 
 ## Requirements
 
-- macOS 13.0 (Ventura) or later (for auto-start functionality)
-- macOS with earlier versions will work but without auto-start feature
-- Xcode (for building from source)
+- macOS 13.0 (Ventura) or later recommended (for auto-start functionality; earlier versions work but without auto-start)
+- Xcode or Swift command-line tools (for building from source)
 
 ## Installation
 
@@ -37,20 +36,22 @@ Grapes is a battery observer app designed for macOS that runs quietly in the men
 1. Clone the repository:
    ```bash
    git clone https://github.com/Harshul23/Grapes.git
-   cd Grapes
+   cd Grapes/battery_observer
    ```
 
-2. Open the project in Xcode:
+2. **Option A - Build with Swift Compiler (Command Line)**:
    ```bash
-   open battery_observer/
+   swiftc -o Grapes main.swift AppDelegate.swift -framework Cocoa -framework IOKit -framework QuartzCore -framework ServiceManagement
+   ./Grapes
    ```
 
-3. Build and run the project:
-   - Select your Mac as the target device
-   - Press `⌘ + R` to build and run
-   - Or use Product → Build (`⌘ + B`) to build the app
+3. **Option B - Create and Build with Xcode**:
+   - Open Xcode and create a new macOS App project
+   - Replace the default files with `main.swift` and `AppDelegate.swift` from the `battery_observer` directory
+   - Copy the `Assets.xcassets` folder into your Xcode project
+   - Build and run (⌘ + R)
 
-4. The app will appear in your menu bar with a battery icon
+4. The app will appear in your menu bar with a battery icon once running
 
 ## Usage
 
