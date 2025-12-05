@@ -1,0 +1,24 @@
+# Xcode ignore rules
+DerivedData/
+build/
+xcuserdata/
+xcuserdata/harshul.xcuserdata/
+*.xcuserstate
+
+# Swift Package Manager & workspace junk
+.project.xcworkspace/xcuserdata/
+.project.xcworkspace/xcshareddata/swiftpm/
+.swiftpm/
+
+Grobs.xcodeproj/project.xcworkspace/
+Grobs.xcodeproj/xcshareddata/
+
+# macOS junk
+.DS_Store
+
+# Logs
+*.log
+
+# Temporary files
+*.swp
+*.tmp
