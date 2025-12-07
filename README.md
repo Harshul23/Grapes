@@ -26,8 +26,8 @@ Grapes is a battery observer app designed for macOS that runs quietly in the men
 
 ## Requirements
 
-- macOS 13.0 (Ventura) or later recommended (for auto-start functionality; earlier versions work but without auto-start)
-- Xcode or Swift command-line tools (for building from source)
+- macOS 13.0 (Ventura) or later
+- Xcode 15.0 or later (for building from source)
 
 ## Installation
 
@@ -39,21 +39,21 @@ Grapes is a battery observer app designed for macOS that runs quietly in the men
    cd Grapes
    ```
 
-2. **Option A - Build with Swift Compiler (Command Line)**:
+2. Open the project in Xcode:
    ```bash
-   swiftc -o Grapes battery_observer/main.swift battery_observer/AppDelegate.swift -framework Cocoa -framework IOKit -framework QuartzCore -framework ServiceManagement
-   ./Grapes
+   open Grapes.xcodeproj
    ```
    
-   **Note**: This command requires macOS with Xcode Command Line Tools installed. The IOKit framework includes IOKit.ps which is used for battery monitoring.
+   Or simply double-click `Grapes.xcodeproj` in Finder.
 
-3. **Option B - Create and Build with Xcode**:
-   - Open Xcode and create a new macOS App project
-   - Replace the default files with `main.swift` and `AppDelegate.swift` from the `battery_observer` directory
-   - Copy the `battery_observer/Assets.xcassets` folder into your Xcode project
-   - Build and run (⌘ + R)
+3. Build and run the project:
+   - Select the "Grapes" scheme in Xcode
+   - Press ⌘ + R to build and run
+   - Or use Product → Run from the menu
 
 4. The app will appear in your menu bar with a battery icon once running
+
+**Note**: The project requires Xcode 15.0+ with macOS deployment target of 13.0 (Ventura) or later.
 
 ## Usage
 
@@ -98,6 +98,22 @@ Alerts automatically dismiss after 3 seconds, or you can:
 - Click anywhere on the overlay to dismiss immediately
 
 ## Technical Details
+
+### Project Structure
+
+```
+Grapes/
+├── Grapes.xcodeproj/          # Xcode project file
+│   ├── project.pbxproj        # Project configuration
+│   └── xcshareddata/          # Shared schemes
+│       └── xcschemes/
+│           └── Grapes.xcscheme
+├── Grapes/                    # Source code directory
+│   ├── main.swift            # Application entry point
+│   ├── AppDelegate.swift     # Main application logic
+│   └── Assets.xcassets/      # App icons and resources
+└── README.md
+```
 
 ### Architecture
 
