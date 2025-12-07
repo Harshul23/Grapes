@@ -146,7 +146,7 @@ class AppDelegate: NSObject, NSApplicationDelegate {
         }
     }
 
-    // MARK: - Sliding overlay UI (safe version)
+    // MARK: - Sliding overlay UI
 
     func ensureOverlayWindow() -> (NSWindow, NSView)? {
         if overlayWindow == nil {

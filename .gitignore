@@ -1,26 +1,68 @@
-# Xcode ignore rules
-DerivedData/
-build/
-xcuserdata/
-xcuserdata/harshul.xcuserdata/
-*.xcuserstate
-
-Grobs.xcodeproj/
-
-# Swift Package Manager & workspace junk
-.project.xcworkspace/xcuserdata/
-.project.xcworkspace/xcshareddata/swiftpm/
-.swiftpm/
-
-Grobs.xcodeproj/project.xcworkspace/
-Grobs.xcodeproj/xcshareddata/
-
-# macOS junk
+########################
+# macOS cruft
+########################
 .DS_Store
+.AppleDouble
+.LSOverride
+Icon?
+._*
 
-# Logs
-*.log
-
-# Temporary files
+# Thumbnail / temp
 *.swp
+*~
 *.tmp
+
+########################
+# Xcode / Apple tooling
+########################
+
+# Build products
+build/
+Build/
+DerivedData/
+*.xcarchive
+
+# User-specific Xcode state
+**/xcuserdata/
+*.xcuserstate
+*.pbxuser
+*.mode1v3
+*.mode2v3
+*.moved-aside
+
+# Swift Package Manager build artifacts
+.build/
+
+########################
+# Binaries & installers
+########################
+
+# Do NOT commit your compiled app or DMG
+*.app
+*.dmg
+*.ipa
+
+########################
+# Editors / IDEs
+########################
+
+# VS Code user settings
+.vscode/
+
+# JetBrains / other IDEs (just in case)
+.idea/
+*.iml
+
+########################
+# Secrets / tokens (generic safety)
+########################
+
+.env
+.env.*
+*.key
+*.pem
+*.p12
+*.cert
+*.mobileprovision
+fastlane/report.xml
+fastlane/Preview.html
