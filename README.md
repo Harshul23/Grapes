@@ -78,6 +78,14 @@ Click the battery icon in the menu bar to access:
    - **Low Battery Threshold**: Set between 5% - 50% (when to alert for charging)
 4. Values are automatically saved and take effect immediately
 
+<img width="1280" height="589" alt="Screenshot 2025-12-09 at 3 22 17 AM" src="https://github.com/user-attachments/assets/2dbcfcfe-0f6b-4843-8176-51e645c0424d" />
+
+##
+
+<img width="1280" height="645" alt="Screenshot 2025-12-09 at 3 23 03 AM" src="https://github.com/user-attachments/assets/5a857065-e051-4a2c-af7f-8aa6635c75ab" />
+
+
+
 ### Understanding Alerts
 
 #### Low Battery Alert (Red)
@@ -86,11 +94,15 @@ Click the battery icon in the menu bar to access:
 - Displays current percentage and "Plug in!" message
 - Suggests you should charge your device
 
+  <img width="1280" height="774" alt="Screenshot 2025-12-07 at 8 54 26 PM copy" src="https://github.com/user-attachments/assets/77ec5569-996c-482a-b99e-9898b5c2c376" />
+
 #### High Battery Alert (Green)
 - Triggers when battery reaches or exceeds your high threshold
 - Shows green sliding bar animation
 - Displays current percentage and "Enough!" message
 - Suggests you should unplug your device
+
+  <img width="1280" height="772" alt="Screenshot 2025-12-09 at 3 11 00 AM" src="https://github.com/user-attachments/assets/a16dd2d8-5e93-447f-9b1d-916c10beb18d" />
 
 ### Dismissing Alerts
 
