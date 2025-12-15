@@ -55,6 +55,13 @@ Grapes is a battery observer app designed for macOS that runs quietly in the men
 
 **Note**: The project requires Xcode 15.0+ with macOS deployment target of 13.0 (Ventura) or later.
 
+### Xcode setup (for macOS Sequoia 15.6.1 and earlier versions)
+
+1. Open `Grapes.xcodeproj` in Xcode 15+ on your Mac.
+2. In the project navigator, select the **Grapes** target → **Signing & Capabilities**. Pick your Apple ID/team so the app can be signed for local builds (Automatic signing is enabled in the project).
+3. In **Build Settings**, confirm **macOS Deployment Target** is set to **13.0 or later**. This value is configured in the project file so the app runs on Ventura (13), Sonoma (14), and Sequoia (15.6.1).
+4. Choose the **My Mac (Designed for macOS)** destination and press **⌘R** to build and run. No additional entitlements are required beyond the sandbox already enabled in the target.
+
 ## Usage
 
 ### Starting the App
